@@ -1,0 +1,17 @@
+checkout:
+    post:
+    - chmod +x ./scripts/saddler.sh
+
+machine:
+  timezone:
+    Asia/Tokyo
+  java:
+    version: oraclejdk8
+
+test:
+  pre:
+    - echo "-----start test-----"
+  override:
+    - ./script/saddler.sh
+  post:
+    - echo "-----end test-----"

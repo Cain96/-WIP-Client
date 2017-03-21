@@ -1,5 +1,7 @@
 apply plugin: 'com.android.application'
 
+apply form: "https://raw.githubusercontent.com/monstar-lab/gradle-android-ci-check/1.1.0/ci.gradle"
+
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.0"
